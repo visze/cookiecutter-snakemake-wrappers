@@ -1,0 +1,5 @@
+channels:
+- bioconda
+- conda-forge
+dependencies:{% for dependency in cookiecutter.dependencies.split(',') %}
+ - {{ dependency.strip() }} {% endfor %}

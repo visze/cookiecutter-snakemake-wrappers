@@ -1,0 +1,7 @@
+name: {{ cookiecutter.wrapper_name }}
+description: {{ cookiecutter.description }}
+authors:{% for author in cookiecutter.authors.split(',') %}
+ - {{ author.strip() }} {% endfor %}
+input: {{ cookiecutter.input_description }}
+output: {{ cookiecutter.output_description }}
+params: {{ cookiecutter.param_description }}
